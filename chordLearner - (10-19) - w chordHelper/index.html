@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <script src="script.js" defer></script>
+    <title>ChordLearner</title>
+</head>
+    
+<body>
+    
+    <div class="titleDiv">
+        <p id="title">ChordLearner</p>
+    </div>
+    
+    <div class="piano">
+        <div class="key white" id="C">C<p class="keyLabels wLbl">C</p></div>
+        <div class="key black" id="Db">Db<p class="keyLabels bLbl">Db</p></div>
+        <div class="key white" id="D">D<p class="keyLabels wLbl">D</p></div>
+        <div class="key black" id="Eb">Eb<p class="keyLabels bLbl">Eb</p></div>
+        <div class="key white" id="E">E<p class="keyLabels wLbl">E</p></div>
+        <div class="key white" id="F">F<p class="keyLabels wLbl">F</p></div>
+        <div class="key black" id="Gb">Gb<p class="keyLabels bLbl">Gb</p></div>
+        <div class="key white" id="G">G<p class="keyLabels wLbl">G</p></div>
+        <div class="key black" id="Ab">Ab<p class="keyLabels bLbl">Ab</p></div>
+        <div class="key white" id="A">A<p class="keyLabels wLbl">A</p></div>
+        <div class="key black" id="Bb">Bb<p class="keyLabels bLbl">Bb</p></div>
+        <div class="key white" id="B">B<p class="keyLabels wLbl">B</p></div>
+        
+        <div class="key white" id="C2">C<p class="keyLabels wLbl">C2</p></div>
+        <div class="key black" id="Db2">Db<p class="keyLabels bLbl">Db2</p></div>
+        <div class="key white" id="D2">D<p class="keyLabels wLbl">D2</p></div>
+        <div class="key black" id="Eb2">Eb<p class="keyLabels bLbl">Eb2</p></div>
+        <div class="key white" id="E2">E<p class="keyLabels wLbl">E2</p></div>
+        <div class="key white" id="F2">F<p class="keyLabels wLbl">F2</p></div>
+        <div class="key black" id="Gb2">Gb<p class="keyLabels bLbl">Gb2</p></div>
+        <div class="key white" id="G2">G<p class="keyLabels wLbl">G2</p></div>
+        <div class="key black" id="Ab2">Ab<p class="keyLabels bLbl">Ab2</p></div>
+        <div class="key white" id="A2">A<p class="keyLabels wLbl">A2</p></div>
+        <div class="key black" id="Bb2">Bb<p class="keyLabels bLbl">Bb2</p></div>
+        <div class="key white" id="B2">B<p class="keyLabels wLbl">B2</p></div>
+    </div>
+    
+    <div class="questionCard">
+        <p id="question1"></p>
+    </div>
+    
+    <div class="answerCard">
+        <p id="answer1">(waiting for user to click 3 notes)</p>
+        <p id="correctA"></p>
+    </div>
+    
+    <div id="coordToggleButtonCard">
+    
+        <button id="showKeysBtn" onclick="hideKeyNames('keyLabels')">Toggle Key Labels</button>
+        
+    </div>
+    
+    <div id="instructions">
+    
+        <p>This program uses flats (b) instead of sharps (#) to help with the learning process.</p>
+        
+        <p>The number '2' after the higher octave's keys are also for learning purposes & are there only to represent that it is a separate higher octave.</p>
+    
+    </div>
+    
+    <div id="chordHelper">
+        <div id="cHInsiderDiv">
+            <p id="cHTitle">chordHelper</p>
+        </div>
+    </div>
+    
+    <div id="chordHelpUI">
+    
+        <button class="chordBtn" id="CChordBtn" onclick="showCMajor(); changeBtnColor(CChordBtn)">C Major</button>
+        <button class="chordBtn" id="DbChordBtn" onclick="showDbMajor(); changeBtnColor(DbChordBtn)">Db Major</button>
+        <button class="chordBtn" id="DChordBtn" onclick="showDMajor(); changeBtnColor(DChordBtn)">D Major</button>
+        <button class="chordBtn" id="EbChordBtn" onclick="showEbMajor(); changeBtnColor(EbChordBtn)">Eb Major</button>
+        <button class="chordBtn" id="EChordBtn" onclick="showEMajor(); changeBtnColor(EChordBtn)">E Major</button>
+        <button class="chordBtn" id="FChordBtn" onclick="showFMajor(); changeBtnColor(FChordBtn)">F Major</button>
+        <button class="chordBtn" id="GbChordBtn" onclick="showGbMajor(); changeBtnColor(GbChordBtn)">Gb Major</button>
+        <button class="chordBtn" id="GChordBtn" onclick="showGMajor(); changeBtnColor(GChordBtn)">G Major</button>
+        <button class="chordBtn" id="AbChordBtn" onclick="showAbMajor(); changeBtnColor(AbChordBtn)">Ab Major</button>
+        <button class="chordBtn" id="AChordBtn" onclick="showAMajor(); changeBtnColor(AChordBtn)">A Major</button>
+        <button class="chordBtn" id="BbChordBtn" onclick="showBbMajor(); changeBtnColor(BbChordBtn)">Bb Major</button>
+        <button class="chordBtn" id="BChordBtn" onclick="showBMajor(); changeBtnColor(BChordBtn)">B Major</button>
+    
+    </div>
+    
+    
+</body>
+</html>

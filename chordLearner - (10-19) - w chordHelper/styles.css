@@ -1,0 +1,273 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #44a7fc;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.titleDiv {
+    position: absolute;
+}
+ 
+#title {
+    
+    background-color: ;
+    border-radius: 2em;
+    color: black;
+    font-size: 25px;
+    margin-top: -14.5em;
+    padding: 1em;
+    text-align: center;
+    width: 300px;
+    height: 5px;
+}
+
+.piano {
+    
+    display: flex;
+    position: absolute;
+    margin-top: -25em;
+    text-align: center;
+    color: transparent;
+    height: auto;
+}
+
+#question1 {
+    
+}
+
+.questionCard {
+    
+    padding: .5em;
+    width: 20em;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    margin-top: -3em;
+    border-radius: 20em;
+}
+
+#answer1 {
+    
+    font-size: 12px;
+    margin-top: -.8em;
+}
+
+.answerCard {
+    
+    color: white;
+    width: 15em;
+    height: 1em;
+    text-align: center;
+    position: absolute;
+    margin-top: 4.8em;
+    background-color: #000000;
+    padding: 1em;
+    border-radius: 20em;
+}
+
+.key {
+    
+    height: calc(var(--width) * 3);
+    width: var(--width);
+    display: block;
+}
+
+.white {
+    
+    --width: 50px;
+    background-color: white;
+    border: 1px solid #333;
+}
+
+.white.active {
+    
+    background-color: #CCC;
+}
+
+.black {
+    
+    --width: 30px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+    border: 2px solid black;
+}
+
+.black.active {
+    
+    background-color: #333;
+}
+
+#showKeysBtn {
+    
+    position: absolute;
+    margin-top: -8.9em;
+    margin-left: -18.2em;
+    background-color: #ffe8e8;
+    color: black;
+    padding: .5em;
+    border-radius: 1em;
+    width: 10em;
+    font-size: 12px;
+    border: 2px solid black;
+}
+
+.keyLabels {
+    color: black;
+}
+
+.wLbl {
+    
+    margin-top: 6em;
+    
+}
+
+.bLbl {
+    
+    color: white;
+    margin-top: 2.9em;
+    font-size: 12px;
+    align-content: center;
+}
+
+#instructions {
+    
+    position: absolute;
+    margin-top: 52em;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border-radius: 1em;    
+    width: 600px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#chordHelper {
+    
+    background-color: white;
+    border-radius: 2em;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 9em;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    
+    
+}
+
+#cHInsiderDiv {
+    margin-top: -.5em;
+    
+}
+
+#chordHelpUI {
+    
+    margin-top: 30.5em;
+    
+}
+
+.chordBtn {
+    
+    position: absolute;
+    margin-top: -9em;
+    margin-left: -18.2em;
+    padding: .5em;
+    border-radius: 1em;
+    width: 9em;
+    font-size: 12px;
+    border: 2px solid black;
+    
+}
+
+#CChordBtn {
+    
+    margin-left: -33em;
+    background-color: white;
+
+}
+
+#DbChordBtn {
+    
+    margin-left: -23em;
+    background-color: white;
+}
+
+#DChordBtn {
+    
+    margin-left: -13em;
+    background-color: white;
+}
+
+#EbChordBtn {
+    
+    margin-left: -3em;
+    background-color: white;
+}
+
+#EChordBtn {
+    
+    margin-left: -33em;
+    margin-top: -6em;
+    background-color: white;
+}
+
+#FChordBtn {
+    
+    margin-left: -23em;
+    margin-top: -6em;
+    background-color: white;
+}
+
+#GbChordBtn {
+    
+    margin-left: -13em;
+    margin-top: -6em;
+    background-color: white;
+}
+
+#GChordBtn {
+    
+    margin-left: -3em;
+    margin-top: -6em;
+    background-color: white;
+}
+
+#AbChordBtn {
+    
+    margin-left: -33em;
+    margin-top: -3em;
+    background-color: white;
+}
+
+#AChordBtn {
+    
+    margin-left: -23em;
+    margin-top: -3em;
+    background-color: white;
+}
+
+#BbChordBtn {
+    
+    margin-left: -13em;
+    margin-top: -3em;
+    background-color: white;
+}
+
+#BChordBtn {
+    
+    margin-left: -3em;
+    margin-top: -3em;
+    background-color: white;
+}

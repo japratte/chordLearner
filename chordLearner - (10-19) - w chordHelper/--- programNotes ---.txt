@@ -1,0 +1,15 @@
+if correct chord keys selected -> show new chord question
+
+when key is selected, change state 
+
+------------
+
+if (states are changed) {
+
+	display correct message
+	display new chord question
+}
+
+------------
+
+for state change, change key color to represent selected key
